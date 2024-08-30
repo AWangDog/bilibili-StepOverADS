@@ -9,3 +9,4 @@
 ## 安装脚本
 我目前无法提交到GreasyFork所以只能使用Github下载
 + [BiliBili自动跳过广告-Github][bilibili-StepOverADS.js]
+[备用](https://raw.githubusercontent.com/AWangDog/bilibili-StepOverADS/main/bilibili-StepOverADS.js)
