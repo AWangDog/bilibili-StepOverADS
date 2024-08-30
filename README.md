@@ -1,11 +1,4 @@
-# bilibili-StepOverADS
-# BiliBili自动跳过广告
-[![GitHub issues][issues-image]][issues-url]
-[![GitHub stars][stars-image]][stars-url]
-[![GitHub forks][forks-image]][forks-url]
-[![license GPL-3.0][license-image]][license-url]
-[![GreasyFork installs][greasyFork-image]][greasyFork-url]
-
+# GitHub 中文化插件/bilibili-StepOverADS
 ## 介绍
 + 目前只是一个半成品,我只写了两个视频的跳过
 + [BV1yi421h7DH](https://www.bilibili.com/video/BV1yi421h7DH/)跟[BV1zm42137oy](https://www.bilibili.com/video/BV1zm42137oy)(拉泽哥打钱!doge)
@@ -13,5 +6,3 @@
 + 我现在没想好如何让用户 **"自发"** 地 **"方便"** 地 **"正确"** 地填写这个json, 所以如果你有更好的建议请通过 **qq:22876400** 或者 **[issue](https://github.com/AWangDog/bilibili-StepOverADS/issues))** 告诉我
 ## 安装脚本
 我目前无法提交到GreasyFork所以只能使用Github下载
-+ [BiliBili自动跳过广告-Github][bilibili-StepOverADS.js]
-[备用](https://raw.githubusercontent.com/AWangDog/bilibili-StepOverADS/main/bilibili-StepOverADS.js)
