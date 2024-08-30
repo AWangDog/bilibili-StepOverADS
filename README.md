@@ -8,5 +8,4 @@
 + 我现在没想好如何让用户 **"自发"** 地 **"方便"** 地 **"正确"** 地填写这个json, 所以如果你有更好的建议请通过 **qq:22876400** 或者 **[issue](https://github.com/AWangDog/bilibili-StepOverADS/issues))** 告诉我
 ## 安装脚本
 我目前无法提交到GreasyFork所以只能使用Github下载
-+ [BiliBili自动跳过广告-Github][ads_jump.json]
-+ ~~[BiliBili自动跳过广告-GreasyFork][ads_jump.json]~~
++ [BiliBili自动跳过广告-Github](ads_jump.json)
