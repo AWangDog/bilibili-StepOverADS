@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         BiliBili自动跳过广告
 // @namespace    AWang_Dog/bilibili-StepOverADS
-// @version      0.2.1
+// @version      0.2.2
 // @description  自动跳过视频中的广告
 // @author       AWang_Dog
 // @license      GPLv3
@@ -129,7 +129,7 @@ function getTimeInter(data) {
             // 将 "start" 部分合并成一个时间段
             let startTimes = data.start.sort((a, b) => a - b);
             result.push(["start", startTimes[0], startTimes[startTimes.length - 1]]);
-        }
+        } else {console.warn("StepOverADS-未找到片头信息: ", error)}
     } catch (error) {
         console.warn("StepOverADS-未找到片头信息: ", error);
     }
@@ -143,7 +143,7 @@ function getTimeInter(data) {
                     result.push(ads);
                 }
             });
-        }
+        } else {console.warn("StepOverADS-未找到广告信息: ", error)}
     } catch (error) {
         console.warn("StepOverADS-未找到广告信息: ", error);
     }
@@ -154,7 +154,7 @@ function getTimeInter(data) {
             data.end.forEach(endTime => {
                 result.push(["end", endTime, maxEndTime]);
             });
-        }
+        } else {console.warn("StepOverADS-未找到片尾信息: ", error)}
     } catch (error) {
         console.warn("StepOverADS-未找到片尾信息: ", error);
     }
