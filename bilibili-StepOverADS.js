@@ -124,27 +124,39 @@ function getTimeInter(data) {
     let maxEndTime = 10000000000; // 定义一个非常大的结束时间
 
     // 处理 "start"
-    if (data.start && Array.isArray(data.start)) {
-        // 将 "start" 部分合并成一个时间段
-        let startTimes = data.start.sort((a, b) => a - b);
-        result.push(["start", startTimes[0], startTimes[startTimes.length - 1]]);
+    try {
+        if (data.start && Array.isArray(data.start)) {
+            // 将 "start" 部分合并成一个时间段
+            let startTimes = data.start.sort((a, b) => a - b);
+            result.push(["start", startTimes[0], startTimes[startTimes.length - 1]]);
+        }
+    } catch (error) {
+        console.warn("StepOverADS-未找到片头信息: ", error);
     }
 
     // 处理 "ads"
-    if (data.ads && Array.isArray(data.ads)) {
-        data.ads.forEach(ad => {
-            if (Array.isArray(ad) && ad.length === 2) {
-                const ads = ["ads", ad[0], ad[1]]
-                result.push(ads);
-            }
-        });
+    try {
+        if (data.ads && Array.isArray(data.ads)) {
+            data.ads.forEach(ad => {
+                if (Array.isArray(ad) && ad.length === 2) {
+                    const ads = ["ads", ad[0], ad[1]]
+                    result.push(ads);
+                }
+            });
+        }
+    } catch (error) {
+        console.warn("StepOverADS-未找到广告信息: ", error);
     }
 
     // 处理 "end"
-    if (data.end && Array.isArray(data.end)) {
-        data.end.forEach(endTime => {
-            result.push(["end", endTime, maxEndTime]);
-        });
+    try {
+        if (data.end && Array.isArray(data.end)) {
+            data.end.forEach(endTime => {
+                result.push(["end", endTime, maxEndTime]);
+            });
+        }
+    } catch (error) {
+        console.warn("StepOverADS-未找到片尾信息: ", error);
     }
 
     // 对结果进行排序，确保时间段按开始时间排序
