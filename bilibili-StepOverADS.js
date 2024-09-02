@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         BiliBili自动跳过广告
 // @namespace    AWang_Dog/bilibili-StepOverADS
-// @version      0.1
+// @version      0.2
 // @description  自动跳过视频中的广告
 // @author       AWang_Dog
 // @license      GPLv3
