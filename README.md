@@ -1,4 +1,4 @@
-# GitHub 中文化插件/bilibili-StepOverADS
+# bilibili-StepOverADS
 
 
 ## 介绍
